@@ -24,21 +24,18 @@ sudo yum update -y
 
 ```
 sudo yum amazon-linux-extras install docker
-
 ```
 
 3. Start Docker
 
 ```
 sudo service docker start
-
 ```
 
 4. Enable Docker
 
 ```
 sudo systemctl enable docker
-
 ```
 
 5. Add User to docker group
