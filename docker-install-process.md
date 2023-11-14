@@ -18,7 +18,6 @@ OS: Amazon Linux2
 
 ```
 sudo yum update -y
-
 ```
 
 2. Install Docker
