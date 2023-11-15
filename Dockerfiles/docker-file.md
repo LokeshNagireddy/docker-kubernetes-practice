@@ -1,0 +1,14 @@
+### Notes about Docker file
+
+* Docker file is a declarative way of creating our own images
+* Docker will give us some syntax to create our own images.
+* file name should be "Dockerfile"
+
+## Instructions
+* FROM : first instruction should be a base OS with the required version.
+
+Building an image from a docker file.
+# Command:
+```
+docker build -t [docker-hub URL]/[username]/[image-name]:version .
+```
