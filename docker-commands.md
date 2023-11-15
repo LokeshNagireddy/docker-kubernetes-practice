@@ -16,4 +16,5 @@
 14. docker run -d -p 80:80 --name <container-id> <image-name> - for assigning a name to the container
 15. docker exec -it <container-id> bash - To login into the container to bash terminal
 16. ctrl + D    - To come out of the container
+17. docker build -t [docker-hub URL]/[username]/[image-name]:version .  --> to build your own image from docker hub.
 
