@@ -20,3 +20,5 @@ docker build -t [docker-hub URL]/[username]/[image-name]:version .
 ```
 docker push [docker-hub URL]/[username]/[image-name]:version
 ```
+
+* RUN : RUN instruction is used to install software, packages and other tasks. It runs at the time of image building.
