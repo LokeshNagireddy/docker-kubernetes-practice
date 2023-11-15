@@ -22,3 +22,8 @@ docker push [docker-hub URL]/[username]/[image-name]:version
 ```
 
 * RUN : RUN instruction is used to install software, packages and other tasks. It runs at the time of image building.
+* CMD : CMD is the instruction that runs the container.
+
+### Difference between RUN and CMD
+* RUN Command is used at the time of image creation
+* CMD is used to run the container

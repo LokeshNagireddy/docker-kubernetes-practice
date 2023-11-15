@@ -17,4 +17,6 @@
 15. docker exec -it <container-id> bash - To login into the container to bash terminal
 16. ctrl + D    - To come out of the container
 17. docker build -t [docker-hub URL]/[username]/[image-name]:version .  --> to build your own image from docker hub.
+18. docker ps -a -q - provides all container ids.
+19. docker rm -f 'docker ps -a -q'  -- To remove all containers at once.
 
