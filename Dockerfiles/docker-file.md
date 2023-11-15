@@ -32,3 +32,5 @@ docker push [docker-hub URL]/[username]/[image-name]:version
 
 * LABEL is used to tag the images with some Label name, so that it is helpful to filter in the pile of images.
 * EXPOSE instruction is useful to tell the users about the ports and protocols image/container is opening. It will not have any functionality it used only to tell the information.
+* ENV is the instruction used to provide environment variables to the containers. you can override the ENV variables at runtime.
+
