@@ -19,4 +19,4 @@
 17. docker build -t [docker-hub URL]/[username]/[image-name]:version .  --> to build your own image from docker hub.
 18. docker ps -a -q - provides all container ids.
 19. docker rm -f 'docker ps -a -q'  -- To remove all containers at once.
-
+20. docker inspect <container-id>   - To find all basic and networking information of that container.

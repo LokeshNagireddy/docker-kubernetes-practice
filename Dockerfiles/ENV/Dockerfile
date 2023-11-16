@@ -1,2 +1,4 @@
 FROM almalinux
-ENV AUTHOR="Lokesh"
+ENV AUTHOR="Lokesh" \
+    DURATION="20HRS" \
+    COURSE="DOCKER"
