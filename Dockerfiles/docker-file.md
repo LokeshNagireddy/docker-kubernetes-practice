@@ -46,3 +46,12 @@ docker push [docker-hub URL]/[username]/[image-name]:version
 * USER
 * WORKDIR - it is used to set the path to the image.
   - docker control will go to default directory after running every command (like RUN). To overcome this behaviour, we can set the working path (or) directory using WORKDIR instruction.
+* ARG - this instruction is used to provide arguments to container at the time of image creation. 
+  - Its the only instruction that can be used before FROM in a Dockerfile.
+  - ARG declared before FROM cannot be used after FROM. you have to declare the argument again after FROM to get the arguments given externally.
+  - Use ENV and ARG for best results.
+* ONBUILD - This is instruction is used to set some hard guidelines on the image.
+* STOPSIGNAL - This instruction is used to define how to exist the container.
+   - By default, docker requests for exit and wait for some time. if its not exiting it can force kil.
+   - when your container receives stop signal, your application can perform, closing files, databases etc to avoid data loss etc..
+   - Developers will take care of how to use STOPSIGNAL to avoid abrupt stopping of container.
