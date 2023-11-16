@@ -44,4 +44,5 @@ docker push [docker-hub URL]/[username]/[image-name]:version
   - If you use both CMD and ENTRYPOINT, dont give any command from terminal. CMD will act as Arguement provided to ENTRYPOINT.
   - In other words, CMD will supply default arguments to ENTRYPOINT. you can always override CMD arguments from terminal.
 * USER
-* WORKDIR -
+* WORKDIR - it is used to set the path to the image.
+  - docker control will go to default directory after running every command (like RUN). To overcome this behaviour, we can set the working path (or) directory using WORKDIR instruction.
