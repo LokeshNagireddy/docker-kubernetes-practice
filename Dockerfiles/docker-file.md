@@ -37,3 +37,11 @@ docker push [docker-hub URL]/[username]/[image-name]:version
 * ADD is similar to COPY, it can copy files from local to container. Also it has two additional capabilities.
   - ADD can download a file from internet to container.
   - ADD can untar/unzip directly into the container.
+* ENTRYPOINT is also used to run the container, but there are some differences.
+  - we cant override ENTRYPOINT, but we can override CMD.
+  - if you try to override ENTRYPOINT, it will go and append to the actual command given in Dockerfile.
+  - Therefore you can give an extension command which is not reccommended in best practices.
+  - If you use both CMD and ENTRYPOINT, dont give any command from terminal. CMD will act as Arguement provided to ENTRYPOINT.
+  - In other words, CMD will supply default arguments to ENTRYPOINT. you can always override CMD arguments from terminal.
+* USER
+* WORKDIR -
