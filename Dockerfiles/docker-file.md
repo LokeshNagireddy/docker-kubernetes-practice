@@ -34,3 +34,6 @@ docker push [docker-hub URL]/[username]/[image-name]:version
 * EXPOSE instruction is useful to tell the users about the ports and protocols image/container is opening. It will not have any functionality it used only to tell the information.
 * ENV is the instruction used to provide environment variables to the containers. you can override the ENV variables at runtime.
 * COPY instruction is used to copy your files from local to container.
+* ADD is similar to COPY, it can copy files from local to container. Also it has two additional capabilities.
+  - ADD can download a file from internet to container.
+  - ADD can untar/unzip directly into the container.
