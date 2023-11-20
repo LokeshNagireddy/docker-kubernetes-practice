@@ -20,5 +20,5 @@
 18. docker build -t [docker-hub URL]/[username]/[image-name]:version .  --> to build your own image from docker hub.
 19. docker ps -a -q - provides all container ids.
 20. docker inspect <container-id>   - To find all basic and networking information of that container.
+21. docker logs <container-id>      - To see the logs of the container.
 
-### Volume Creation and related
