@@ -55,3 +55,7 @@ docker push [docker-hub URL]/[username]/[image-name]:version
    - By default, docker requests for exit and wait for some time. if its not exiting it can force kil.
    - when your container receives stop signal, your application can perform, closing files, databases etc to avoid data loss etc..
    - Developers will take care of how to use STOPSIGNAL to avoid abrupt stopping of container.
+* VOLUME - docker volumes are ephemeral, when you remove a container, by default it will delete all data.
+   - docker volumes are stored in /var/lib/docker/volumes.
+   - when you create a volume and mount it to container, the data will not be deleted when container was removed.
+   - We can create a directory and attach it as a volume instead of creating a docker volume, it is called anonymous volumes. Docker dont manage these volumes/directories.
