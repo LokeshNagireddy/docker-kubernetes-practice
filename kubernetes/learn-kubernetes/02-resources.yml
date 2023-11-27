@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stress
+spec:
+  containers:
+  - image: lokeshdevops2023/stress  # need to create the docker image yet
+    imagePullPolicy: Always
+    name: stress
+    command: ["sleep","200"]
+    resources:
+      requests:
+        cpu: "100m" # 1CPU --> 1000m
+        memory: "200mi"
+      limits:
+        cpu: "200m"
+        memory: "500mi"
+        
+
